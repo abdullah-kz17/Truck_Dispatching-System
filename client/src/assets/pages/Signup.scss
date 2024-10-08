@@ -1,0 +1,76 @@
+$primary-color: #6C63FF;
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9; 
+  
+  .signup-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    h1 {
+      margin-bottom: 20px;
+      color: $primary-color;
+      font-size: 24px;
+    }
+
+    form {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-radius: 30px;
+      padding: 20px;
+      background-color: white;
+      width: 100%;
+      max-width: 280px; // Adjust width as needed
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+      .form-group {
+        margin-bottom: 15px;
+
+        input,
+        select {
+          height: 35px;
+          width: 100%;
+          border-radius: 30px;
+          padding: 0 15px;
+          border: 1px solid #ddd;
+          font-size: 16px;
+          box-sizing: border-box;
+          &:focus {
+            outline: none;
+            border: 2px solid $primary-color;
+            box-shadow: 0 0 5px rgba($primary-color, 0.5);
+          }
+        }
+
+        select {
+          background-color: #f9f9f9; // Background color for select box
+        }
+      }
+
+      button {
+        background-color: $primary-color;
+        color: white;
+        padding: 6px 10px;
+        border-radius: 30px;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+      }
+    }
+  }
+}

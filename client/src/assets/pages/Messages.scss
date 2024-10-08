@@ -1,0 +1,23 @@
+// Messages.scss
+
+.messages-container {
+    .user-info {
+      background-color: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.375rem; // Tailwind's rounded-lg
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .message-card {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.375rem; // Tailwind's rounded-lg
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #f0f4f8;
+      }
+    }
+  }
+  

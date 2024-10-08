@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/* App.css */
+.service-card .service-item {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.service-card .service-item:hover {
+  background-color: #5e55fb; /* Your primary color */
+  color: white;
+}
+
+.service-card .service-icon {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.service-card .service-item:hover .service-icon {
+  background-color: white;
+  color: #5e55fb;
+}

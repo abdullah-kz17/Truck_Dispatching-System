@@ -1,0 +1,40 @@
+$primary-color: #5e55fb;
+$secondary-color: #ffffff;
+
+.admin-layout {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f5f5;
+
+  .sidebar {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+
+    .sidebar-title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .content {
+    padding: 1rem;
+    background-color: #fff;
+    overflow-y: auto;
+
+    .stat-card {
+      background-color: #fafafa;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: box-shadow 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}
